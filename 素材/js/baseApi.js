@@ -15,7 +15,7 @@ $.ajaxPrefilter(function (options) {
     }
 
     options.complete = function (res) {
-        console.log(res);
+        // console.log(res);
         if (res.responseJSON.status === 1) {
             //强制清空token
             localStorage.removeItem('token');
